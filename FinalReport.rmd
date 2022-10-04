@@ -17,7 +17,7 @@ require(tidyverse)
 require(tigerstats)
 require(knitr)
 require(foreign)
-GSS <-read.dta(file="GSS2016.dta")
+GSS <-read.dta(file="GSS2016       .dta")
 GSS <- droplevels(GSS)
 mydata <- select(GSS,race,cappun)
 mydata <- na.omit(mydata)
@@ -30,9 +30,16 @@ mydata <- na.omit(mydata)
 Is attitude toward capitol punishment (cappun) independent of race (race)?
 If not, then whose view differs from whom??
 
+```{r eval=FALSE}
+Mydata2 <- mydata %>%
+mutate(across(where(is.character), as.factor))
+```
+
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
+
+For this variable analysis we have to figure out if the attitude of capitol punishemnt is independant to race by suing the cat_cat method, graphical results, descpriptove results, numercial results, and infertential results. 
 
 # Results
 
@@ -44,7 +51,13 @@ If not, then whose view differs from whom??
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
 
+```{r}
+barchartGC(~race + cappun,data=mydata)
+barchartGC(~race + cappun,data=mydata, type="percent")
 
+```
+
+This plot shows us that attitude towards capitol punishment is dependent on race. White people seem to favor it  twice more than black people, black people oppose it 1/3 times more, and other races favor it 1/5 times more. 
 
 ## Now with The Most data (fewer variables gives more data points)
 
