@@ -67,8 +67,13 @@ This plot shows us that attitude towards capitol punishment is dependent on race
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+table1 <- xtabs(~race + cappun, data=mydata)
+rowPerc(table1)
+colPerc(table1)
+```
 
-
+This numerical data shows us that white people favor capitol punishment, while blacks oppose it and other races are sort of in the middle about it/undicisive. 
 
 ## Now with More data
 
