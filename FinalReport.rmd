@@ -73,7 +73,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-This numerical data shows us that white people favor capitol punishment, while blacks oppose it and other races are sort of in the middle about it/undicisive. 
+This numerical data shows us that white people favor capitol punishment, while blacks oppose it and other races are sort of in the middle about it/undecisive. 
 
 ## Now with More data
 
@@ -89,7 +89,7 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-The p value in this test is 0 so it shows us that all races are going to have different opinions. 
+The p value in this test is 0 so it shows us that all races are going to have different opinions. The white people favor capitol punishment highly, black people do not favor capitol punishment highly, and other races are different from whites but still close in favor of capitol punishment. 
 
 
 
