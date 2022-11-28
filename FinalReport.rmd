@@ -91,8 +91,11 @@ fisher.test(table1)
 
 The p value in this test is 0 so it shows us that all races are going to have different opinions. The white people favor capitol punishment highly, black people do not favor capitol punishment highly, and other races are different from whites but still close in favor of capitol punishment. 
 
+```{r}
+fisherXY(mydata$race,mydata$cappun)
+```
 
-
+Each group 
 
 ## More data version
 
