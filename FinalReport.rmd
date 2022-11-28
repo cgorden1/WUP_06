@@ -95,7 +95,7 @@ The p value in this test is 0 so it shows us that all races are going to have di
 fisherXY(mydata$race,mydata$cappun)
 ```
 
-Each group 
+Each group has a different opinion and here the odds ratio of the races having the same opinion is 2.343.
 
 ## More data version
 
