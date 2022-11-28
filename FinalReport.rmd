@@ -103,3 +103,4 @@ Each group has a different opinion and here the odds ratio of the races having t
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+Through looking at the results of numerical, graphical, and inferential tests, we can see that the opinions on capitol punishment are not independant of race. other races and white people are pretty close on their opinion but white people and black people differ greatly. 
